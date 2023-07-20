@@ -350,7 +350,7 @@ int err;
 	mt.error = 0;
 	mt.numworker = 0;
 	mt.numavail = 0;
-	mt.max_idle = config->max_idle_threads;
+	mt.max_idle = 6;
 	mt.max_threads = config->max_threads;
 	mt.main.thread_id = pthread_self();
 	mt.main.prev = mt.main.next = &mt.main;
